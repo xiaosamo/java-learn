@@ -9,9 +9,9 @@ import java.util.Map;
 import java.util.concurrent.*;
 
 /**
- * @Author: lixk
- * @Date: 2018/5/9 15:03
- * @Description: 简单的内存缓存工具类，使用ConcurrentHashMap
+ * @author yuan
+ * @date 2019/6/6
+ * @description 使用ConcurrentHashMap实现缓存
  */
 public class Cache2 {
     /**

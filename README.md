@@ -233,6 +233,6 @@ public class Cache2 {
 ![结果](img/concur_map.png)
 
 
-结果，看到ConcurrentHashMap实现的查询速度明显优于用synchronized锁实现的
+从结果可以看出，ConcurrentHashMap实现的查询速度明显优于加synchronized的
 
 
