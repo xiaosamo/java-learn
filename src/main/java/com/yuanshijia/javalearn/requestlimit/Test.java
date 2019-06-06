@@ -1,5 +1,7 @@
 package com.yuanshijia.javalearn.requestlimit;
 
+import com.google.common.util.concurrent.RateLimiter;
+
 /**
  * @author yuan
  * @date 2019/5/28
@@ -14,5 +16,6 @@ public class Test {
             }
             System.out.println("第" + i + "次请求结果=" + tokenBucket.getToken());
         }
+
     }
 }
