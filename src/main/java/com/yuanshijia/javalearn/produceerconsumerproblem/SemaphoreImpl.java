@@ -1,13 +1,13 @@
 package com.yuanshijia.javalearn.produceerconsumerproblem;
 
-import java.util.concurrent.Semaphore;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.concurrent.Semaphore;
+
 
 /**
  * 生产者消费者问题，使用Semaphore实现
  *
  * @author ysj
- * @date 2019-06-21
  */
 public class SemaphoreImpl {
 

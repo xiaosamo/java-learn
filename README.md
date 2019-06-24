@@ -236,6 +236,7 @@ public class Cache2 {
 从结果可以看出，ConcurrentHashMap实现的查询速度明显优于加synchronized的
 
 
+
 # 生产者消费者问题 
 ## Semaphore例子
 ```java
