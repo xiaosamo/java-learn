@@ -3,6 +3,7 @@ package com.yuanshijia.javalearn.produceerconsumerproblem;
 import java.util.Random;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.ForkJoinPool;
 
 /**
  * 使用 BlockingQueue 实现生产者消费者问题
@@ -22,7 +23,6 @@ public class BlockingQueueImpl {
 
         new Consumer().start();
         new Consumer().start();
-
     }
 
     static class Producer extends Thread {
