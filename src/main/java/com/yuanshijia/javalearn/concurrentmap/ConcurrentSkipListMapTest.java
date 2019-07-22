@@ -1,4 +1,4 @@
-package com.yuanshijia.javalearn.offer;
+package com.yuanshijia.javalearn.concurrentmap;
 
 import java.util.concurrent.ConcurrentSkipListMap;
 
@@ -7,7 +7,7 @@ import java.util.concurrent.ConcurrentSkipListMap;
  * @date 2019-07-22
  * @description
  */
-public class Test {
+public class ConcurrentSkipListMapTest {
     public static void main(String[] args) {
         ConcurrentSkipListMap<String, String> map = new ConcurrentSkipListMap<>();
 

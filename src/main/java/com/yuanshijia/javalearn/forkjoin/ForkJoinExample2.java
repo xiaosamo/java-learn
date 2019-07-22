@@ -29,8 +29,8 @@ public class ForkJoinExample2 extends RecursiveTask<BigInteger> {
             // 任务足够小则直接计算
             for (int i = first; i <= last; i++) {
                 result = result.add(BigInteger.valueOf(i));
-
             }
+          
         } else {
             // 拆分成小任务
             int m = first + (last - first) / 2;
@@ -46,7 +46,7 @@ public class ForkJoinExample2 extends RecursiveTask<BigInteger> {
 
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         long start = System.currentTimeMillis();
-        ForkJoinExample2 example = new ForkJoinExample2(1, 10000000);
+        ForkJoinExample2 example = new ForkJoinExample2(1, 10000);
         ForkJoinPool forkJoinPool = new ForkJoinPool();
         ForkJoinTask<BigInteger> result = forkJoinPool.submit(example);
         System.out.println(result.get().toString());
