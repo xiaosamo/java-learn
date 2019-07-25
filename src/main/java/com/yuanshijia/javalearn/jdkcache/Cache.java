@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
  * @date 2019/6/6
  * @description 使用JDK来实现自己的缓存（支持高并发）
  */
-public class DoubleCache {
+public class Cache {
     /**
      * 键值对集合
      */
