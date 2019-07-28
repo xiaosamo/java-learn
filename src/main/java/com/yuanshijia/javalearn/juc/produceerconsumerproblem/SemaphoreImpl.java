@@ -1,4 +1,4 @@
-package com.yuanshijia.javalearn.produceerconsumerproblem;
+package com.yuanshijia.javalearn.juc.produceerconsumerproblem;
 
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.Semaphore;
