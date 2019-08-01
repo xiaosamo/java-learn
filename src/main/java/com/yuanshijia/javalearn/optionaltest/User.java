@@ -5,18 +5,17 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
-import java.util.List;
-
 /**
  * @author yuanshijia
- * @date 2019-07-29
+ * @date 2019-07-30
  * @description
  */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-public class Company {
+public class User {
+
+    private String id;
     private String name;
-    private List<Employee> employees;
 }
