@@ -8,9 +8,15 @@ import java.util.ServiceLoader;
  * @description
  */
 public class Test {
-    public static void main(String[] args) {
-        ServiceLoader<Robot> serviceLoader = ServiceLoader.load(Robot.class);
-        System.out.println("Java SPI");
-        serviceLoader.forEach(Robot::sayHello);
+    public static void main(String[] args) throws InterruptedException {
+        while (true) {
+            System.out.println("JAVA SPI");
+            ServiceLoader<Robot> serviceLoader = ServiceLoader.load(Robot.class);
+            for (Robot robot : serviceLoader) {
+                robot.sayHello();
+            }
+            System.out.println();
+            Thread.sleep(500);
+        }
     }
 }
