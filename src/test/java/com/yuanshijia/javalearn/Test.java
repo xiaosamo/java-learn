@@ -8,7 +8,8 @@ package com.yuanshijia.javalearn;
 public class Test {
     @org.junit.Test
     public void test(){
-        // 获得可用的处理器个数
+         // 获得可用的处理器个数
         System.out.println(Runtime.getRuntime().availableProcessors());
     }
+
 }
